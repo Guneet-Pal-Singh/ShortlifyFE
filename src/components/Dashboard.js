@@ -23,8 +23,8 @@ ChartJS.register(
   ArcElement
 );
 
-const API_URL = 'http://localhost:5000/api';
-const backendBaseUrl = "http://localhost:5000";
+const API_URL = 'https://shortlifybe.onrender.com/api';
+const backendBaseUrl = "https://shortlifybe.onrender.com";
 
 function Dashboard() {
   const [urls, setUrls] = useState([]);

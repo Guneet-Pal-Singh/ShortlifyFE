@@ -15,7 +15,7 @@ function Auth({ onAuth }) {
 
     try {
       const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
-      const res = await fetch(`http://localhost:5000${endpoint}`, {
+      const res = await fetch(`https://shortlifybe.onrender.com${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -106,4 +106,4 @@ function Auth({ onAuth }) {
   );
 }
 
-export default Auth; 
+export default Auth;

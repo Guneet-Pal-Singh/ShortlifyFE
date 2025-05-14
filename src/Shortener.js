@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://shortlifybe.onrender.com/api';
 
 function Shortener() {
   const [url, setUrl] = useState('');
@@ -147,4 +147,4 @@ function Shortener() {
   );
 }
 
-export default Shortener; 
+export default Shortener;
