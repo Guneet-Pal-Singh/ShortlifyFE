@@ -725,6 +725,7 @@ footer {
 @media (max-width: 768px) {
   .dashboard {
     grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
   .url-list {
@@ -741,11 +742,148 @@ footer {
 
   .chart-container {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-card, .chart, .recent-visits {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .visit-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .shortener {
+    padding: 1rem;
+  }
+  .options {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .result {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  .short-url {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .qr-code {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard {
+    padding: 0.5rem;
+  }
+
+  .url-list h2, .analytics h2 {
+    font-size: 1.1rem;
+  }
+
+  .stat-card p {
+    font-size: 1.1rem;
+  }
+
+  .chart, .recent-visits {
+    padding: 0.5rem;
+  }
+
+  .url-item {
+    padding: 0.5rem;
+  }
+
+  .shortener {
+    padding: 0.5rem;
+  }
+  .result {
+    padding-top: 0.5rem;
+  }
+  .short-url input, .short-url button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .qr-code {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .user-info-floating {
+    top: 10px;
+    right: 10px;
+    padding: 0.28rem 0.8rem;
+    font-size: 0.93rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-info-floating {
+    position: fixed;
+    top: 8px;
+    right: 4px;
+    left: auto;
+    padding: 0.22rem 0.6rem;
+    font-size: 0.91rem;
+    z-index: 2000;
+  }
+  .logout-btn {
+    padding: 0.18rem 0.6rem;
+    font-size: 0.91rem;
+  }
+  .App-header {
+    margin-top: 2.5rem;
+  }
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 0.7rem 0.7rem 0.7rem;
+    margin-top: 2.5rem;
+    text-align: left;
+    gap: 0.2rem;
+    background: linear-gradient(120deg, #f8fafc 80%, #e0e7ff 100%);
+    border-bottom: 2px solid var(--primary-light);
+    box-shadow: 0 2px 8px 0 rgba(99,102,241,0.08);
+  }
+  .App-header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+    color: var(--primary-dark);
+    background: none;
+    -webkit-text-fill-color: initial;
+    font-weight: 900;
+    letter-spacing: -1px;
+  }
+  .App-header p {
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    color: var(--gray);
+    font-weight: 500;
+  }
+  .user-info-floating {
+    position: static;
+    margin-bottom: 0.7rem;
+    align-self: flex-end;
+    box-shadow: 0 2px 8px 0 rgba(99,102,241,0.08);
+    border: none;
+    background: #fff;
+    z-index: 2000;
+  }
+  .App-header {
+    background: linear-gradient(120deg, rgba(255,255,255,0.10) 80%, rgba(99,102,241,0.05) 100%) !important;
+    /* More transparent for mobile */
+    box-shadow: 0 2px 8px 0 rgba(99,102,241,0.04);
+    border-bottom: 2px solid var(--primary-light);
   }
 }
 
@@ -798,34 +936,6 @@ footer {
   background: var(--primary-dark);
   color: #fff;
   box-shadow: 0 4px 16px 0 rgba(99,102,241,0.18);
-}
-
-@media (max-width: 900px) {
-  .user-info-floating {
-    top: 10px;
-    right: 10px;
-    padding: 0.28rem 0.8rem;
-    font-size: 0.93rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .user-info-floating {
-    position: fixed;
-    top: 8px;
-    right: 4px;
-    left: auto;
-    padding: 0.22rem 0.6rem;
-    font-size: 0.91rem;
-    z-index: 2000;
-  }
-  .logout-btn {
-    padding: 0.18rem 0.6rem;
-    font-size: 0.91rem;
-  }
-  .App-header {
-    margin-top: 2.5rem;
-  }
 }
 
 /* Auth Container */

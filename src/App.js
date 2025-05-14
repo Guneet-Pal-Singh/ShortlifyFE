@@ -95,7 +95,7 @@ function App() {
     <div className="App">
       {isAuthenticated && (
         <div className="user-info-floating">
-          <span>Welcome, {user?.name}</span>
+            <span>Welcome, {user?.name}</span>
           <button className="logout-btn" onClick={handleLogout}>Logout</button>
         </div>
       )}
