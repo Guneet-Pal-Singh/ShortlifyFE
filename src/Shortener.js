@@ -60,16 +60,30 @@ function Shortener() {
   };
 
   const handleDownloadQR = () => {
-    const canvas = document.getElementById('qr-code');
-    const pngUrl = canvas
-      .toDataURL('image/png')
-      .replace('image/png', 'image/octet-stream');
-    const downloadLink = document.createElement('a');
-    downloadLink.href = pngUrl;
-    downloadLink.download = 'qrcode.png';
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+    const svg = document.getElementById('qr-code');
+    if (!svg) return;
+    const serializer = new XMLSerializer();
+    const source = serializer.serializeToString(svg);
+    const img = new window.Image();
+    const svg64 = window.btoa(unescape(encodeURIComponent(source)));
+    const image64 = 'data:image/svg+xml;base64,' + svg64;
+    img.onload = function () {
+      const canvas = document.createElement('canvas');
+      canvas.width = svg.width.baseVal.value || 200;
+      canvas.height = svg.height.baseVal.value || 200;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0);
+      const pngUrl = canvas.toDataURL('image/png');
+      const downloadLink = document.createElement('a');
+      downloadLink.href = pngUrl;
+      downloadLink.download = 'qrcode.png';
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    };
+    img.src = image64;
   };
 
   return (
