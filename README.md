@@ -52,8 +52,8 @@ npm run dev
     <td align="center"><img src="https://github.com/Guneet-Pal-Singh/ShortlifyFE/blob/main/demo_img/Analytics.png?raw=true" width="300"/></td>
   </tr>
   <tr>
-    <td align="center"><strong>🏠 Home Screen</strong></td>
     <td align="center"><strong>📊 Analytics Screen</strong></td>
+    <td align="center"><strong>🏠 Home Page</strong></td>
   </tr>
 </table>
 
