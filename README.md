@@ -4,7 +4,9 @@ A sleek and modern frontend for **Shortlify**, built using **React.js** and **Ta
 
 🛠️ **Backend Repo**: [ShortlifyBE](https://github.com/Guneet-Pal-Singh/ShortlifyBE)  
 📥 **Download this Repo**: [Click Here](https://github.com/Guneet-Pal-Singh/ShortlifyFE/archive/refs/heads/main.zip)
-🔗 **Website Link**:[Shortlify](https://shortlify-fe.vercel.app/)
+
+🔗 **Website Link**: [Shortlify](https://shortlify-fe.vercel.app/)
+
 ---
 
 ## 🌟 Features
