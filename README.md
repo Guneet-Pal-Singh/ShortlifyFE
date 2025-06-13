@@ -44,11 +44,19 @@ npm run dev
 
 ---
 
-## 📸 Preview
+<h3 align="center">📸 Shortlify Preview</h3>
 
-![Shortlify UI Screenshot](https://placehold.co/600x300?text=Shortlify+UI+Preview)
+<table align="center">
+  <tr>
+    <td align="center"><img src="https://github.com/Guneet-Pal-Singh/ShortlifyFE/blob/main/demo_img/Home.png?raw=true" width="300"/></td>
+    <td align="center"><img src="https://github.com/Guneet-Pal-Singh/ShortlifyFE/blob/main/demo_img/Analytics.png?raw=true" width="300"/></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>🏠 Home Screen</strong></td>
+    <td align="center"><strong>📊 Analytics Screen</strong></td>
+  </tr>
+</table>
 
----
 
 ## 👤 Author
 
